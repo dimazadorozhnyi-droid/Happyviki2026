@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Приглашение — Виктория</title>
+  <meta name="description" content="Весеннее приглашение на день рождения Виктории. Подтверждение участия онлайн." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-overlay"></div>
+
+      <nav class="topbar">
+        <a href="#details" class="nav-link">Подробнее</a>
+        <a href="#palette" class="nav-link">Дресс-код</a>
+        <a href="#rsvp" class="nav-link nav-link--primary">RSVP</a>
+      </nav>
+
+      <section class="hero-card">
+        <p class="eyebrow">Spring / New Life</p>
+        <p class="subeyebrow">Ultra Luxury Editorial Botanical</p>
+        <h1>Я приглашаю Вас</h1>
+        <p class="hero-subtitle">на мой праздник</p>
+        <p class="hero-copy">
+          Весна — это всегда новая жизнь. Предвкушение ярких эмоций и захватывающих летних дней.
+          Я буду рада разделить эти чарующие эмоции вместе с Вами на моём дне рождения.
+        </p>
+
+        <div class="hero-grid">
+          <article class="meta-card">
+            <span class="meta-label">Дата</span>
+            <strong>01 мая 2026</strong>
+          </article>
+          <article class="meta-card">
+            <span class="meta-label">Время</span>
+            <strong>16:00</strong>
+          </article>
+          <article class="meta-card">
+            <span class="meta-label">Локация</span>
+            <strong>Шале Берёзка</strong>
+          </article>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#rsvp" class="button button--primary">Подтвердить участие</a>
+          <a href="#details" class="button button--ghost">Подробнее</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="countdown-section section-card" aria-labelledby="countdown-title">
+        <div>
+          <p class="section-kicker">До начала вечера</p>
+          <h2 id="countdown-title">Скоро увидимся</h2>
+          <p class="section-copy">
+            Тёплый свет, камин, красивые детали и природная палитра — вечер будет наполнен уютом,
+            эстетикой и весенним настроением.
+          </p>
+        </div>
+
+        <div class="countdown" aria-live="polite">
+          <div class="countdown-item"><span id="days">00</span><small>дней</small></div>
+          <div class="countdown-item"><span id="hours">00</span><small>часов</small></div>
+          <div class="countdown-item"><span id="minutes">00</span><small>минут</small></div>
+          <div class="countdown-item"><span id="seconds">00</span><small>секунд</small></div>
+        </div>
+      </section>
+
+      <section id="details" class="details-grid">
+        <article class="section-card">
+          <p class="section-kicker">Event details</p>
+          <h2>Виктория</h2>
+          <p class="lead">день рождения в атмосфере уюта, огня и весеннего настроения</p>
+
+          <dl class="detail-list">
+            <div>
+              <dt>Место</dt>
+              <dd>Ресторан «Шале Берёзка»</dd>
+            </div>
+            <div>
+              <dt>Локация</dt>
+              <dd>Новогорск • Каминный зал</dd>
+            </div>
+            <div>
+              <dt>Настроение</dt>
+              <dd>Тёплый свет, свечи, природная палитра, весенний luxury mood</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="section-card image-card">
+          <div class="image-placeholder">
+            <div class="image-text">
+              <p>Main invitation</p>
+              <strong>Светская эстетика, весенний luxury mood</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="palette" class="section-card palette-section">
+        <p class="section-kicker">Dress code</p>
+        <h2>Палитра образов</h2>
+        <p class="section-copy">
+          Ladies — коктейльные платья. Gentlemen — casual. Оттенки зелёного, мягкий кирпичный,
+          соломенный, карамельный и природные нейтральные тона.
+        </p>
+
+        <div class="palette-grid">
+          <div class="swatch swatch-1"><span>Мягкий оливковый</span></div>
+          <div class="swatch swatch-2"><span>Глубокий зелёный</span></div>
+          <div class="swatch swatch-3"><span>Светлый шампань</span></div>
+          <div class="swatch swatch-4"><span>Тёплый кирпичный</span></div>
+          <div class="swatch swatch-5"><span>Соломенный</span></div>
+          <div class="swatch swatch-6"><span>Природный тауп</span></div>
+        </div>
+      </section>
+
+      <section id="rsvp" class="section-card rsvp-section">
+        <div class="rsvp-header">
+          <div>
+            <p class="section-kicker">RSVP</p>
+            <h2>Подтверждение участия</h2>
+            <p class="section-copy">
+              Ответы гостей отправляются на серверную функцию. Токен Telegram хранится только
+              в переменных окружения Netlify и не попадает в браузер.
+            </p>
+          </div>
+
+          <div class="trust-badges">
+            <span>Безопасная отправка</span>
+            <span>Проверка полей</span>
+            <span>Антиспам</span>
+          </div>
+        </div>
+
+        <form id="rsvpForm" class="rsvp-form" novalidate>
+          <div class="field-grid">
+            <label class="field">
+              <span>Ваше имя *</span>
+              <input type="text" id="guestName" name="guestName" autocomplete="name" maxlength="120" required />
+              <small class="field-error" data-error-for="guestName"></small>
+            </label>
+
+            <label class="field">
+              <span>Телефон / @telegram *</span>
+              <input type="text" id="contact" name="contact" autocomplete="tel" maxlength="120" required />
+              <small class="field-error" data-error-for="contact"></small>
+            </label>
+
+            <label class="field">
+              <span>Количество гостей *</span>
+              <select id="guestCount" name="guestCount" required>
+                <option value="">Выберите</option>
+                <option value="1">1 гость</option>
+                <option value="2">2 гостя</option>
+                <option value="3">3 гостя</option>
+                <option value="4">4 гостя</option>
+              </select>
+              <small class="field-error" data-error-for="guestCount"></small>
+            </label>
+
+            <label class="field">
+              <span>Статус *</span>
+              <select id="attendance" name="attendance" required>
+                <option value="">Выберите</option>
+                <option value="С радостью буду">С радостью буду</option>
+                <option value="Скорее всего буду">Скорее всего буду</option>
+                <option value="К сожалению, не смогу">К сожалению, не смогу</option>
+              </select>
+              <small class="field-error" data-error-for="attendance"></small>
+            </label>
+          </div>
+
+          <label class="field field--full">
+            <span>Комментарий</span>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="4"
+              maxlength="500"
+              placeholder="Например: приду с супругом, буду к 16:30, есть пожелания по меню и т.д."
+            ></textarea>
+            <small class="field-hint">До 500 символов</small>
+          </label>
+
+          <label class="field honeypot" aria-hidden="true">
+            <span>Не заполняйте это поле</span>
+            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+          </label>
+
+          <div class="message-preview">
+            <div class="message-preview__header">
+              <strong>Готовое сообщение</strong>
+              <button type="button" id="copyMessage" class="text-button">Скопировать текст</button>
+            </div>
+            <pre id="messagePreview" class="message-preview__body"></pre>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="submitBtn" class="button button--primary">Отправить RSVP в Telegram</button>
+            <button type="button" id="saveDraftBtn" class="button button--ghost">Сохранить</button>
+            <button type="button" id="resetBtn" class="button button--ghost">Сбросить</button>
+          </div>
+
+          <div id="formStatus" class="status-box" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>Виктория</strong>
+      <p>Ваше присутствие сделает мой праздник особенным ♥</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
